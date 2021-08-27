@@ -13,8 +13,11 @@ public class Deck {
     private static boolean gameOver = false;
     private static int plays = 0;
 
-    public static void clearScreen(){
-        System.out.print("\033[H\033[2J");
+    public static void clearScreen() throws IOException {
+        // System.out.print("\033[H\033[2J");
+        System.out.flush();
+        //TODO: Implement clearScreen
+        // Runtime.getRuntime().exec("cls");
     }
 
     public static void sleep() throws IOException {
